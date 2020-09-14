@@ -331,27 +331,26 @@
 	<!--*#$-IGS END.-$#-->
 
 	<backpack_item_stack>
-	<!-- インベントリ個別枠設定 -->
-		<rect controller="ItemStack" style="itemStack, hover" collider_scale="1.0">
-			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="70" height="70" color="[black]" type="sliced" fillcenter="false" />
-			<sprite depth="3" name="background" sprite="menu_empty3px" width="65" height="65" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
-			<sprite depth="2" name="highlightOverlay" width="64" height="64" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true"/>
+		<rect controller="ItemStack" style="itemStack, hover" collider_scale="3.0">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="198" height="198" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="195" height="195" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
+			<sprite depth="2" name="highlightOverlay" width="192" height="192" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true"/>
 
-			<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="65,65" globalopacity="true"/>
+			<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="192,192" globalopacity="true"/>
 
-			<sprite depth="6" name="itemIcon" width="64" height="64" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-30" pivot="center" foregroundlayer="true" color="{iconcolor}" />
-			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true"/>
-			<sprite depth="8" name="itemtypeicon" width="24" height="24" sprite="ui_game_symbol_{itemtypeicon}" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+			<sprite depth="6" name="itemIcon" width="192" height="192" atlas="ItemIconAtlas" sprite="{itemicon}" pos="105,-90" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="72" height="72" sprite="" pos="2,-2" foregroundlayer="true"/>
+			<sprite depth="8" name="itemtypeicon" width="72" height="72" sprite="ui_game_symbol_{itemtypeicon}" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
 
-			<sprite depth="3" name="durabilityBackground" width="63" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -55" foregroundlayer="true"/>
-			<filledsprite depth="4" name="durability" width="63" height="10" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -55" foregroundlayer="true"/>
+			<sprite depth="3" name="durabilityBackground" width="189" height="30" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="3, -165" foregroundlayer="true"/>
+			<filledsprite depth="4" name="durability" width="189" height="30" sprite="menu_empty2px" color="[transparent]" type="filled" pos="3, -165" foregroundlayer="true"/>
 
-			<sprite depth="5" name="disabledOverlay" width="64" height="64" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+			<sprite depth="5" name="disabledOverlay" width="192" height="192" color="[darkGrey_half_alpha]" pos="3,-3" type="sliced" visible="false"/>
 
-			<label depth="7" name="stackValue" pos="-2,-40" width="62" height="28" text="{itemcount}" font_size="26" effect="outline" justify="center" />
-			<label depth="7" name="timer" pos="35,-33" width="62" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]"/>
-			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="62" height="62" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
-			<sprite depth="13" name="assembleIcon" size="35,35" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			<label depth="7" name="stackValue" pos="-6,-40" width="186" height="28" text="{itemcount}" font_size="26" effect="outline" justify="center" />
+			<label depth="7" name="timer" pos="105,-33" width="186" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]"/>
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="186" height="186" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+			<sprite depth="13" name="assembleIcon" size="105,105" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="42,-14" foregroundlayer="true" />
 		</rect>
 	</backpack_item_stack>
 
